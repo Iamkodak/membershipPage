@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Membership Regstration</title>
+    <link rel="stylesheet" href="form.css" />
+    <link rel="stylesheet" href="responsive.css">
+  </head>
+  <body>
+    <header>
+        <h1>Mike Chandler Management</h1>
+      </header>  
+    <section class="container">
+      <h2>Membership Form</h2>
+      <form action="https://formspree.io/f/xldjypnv" class="form" method="post">
+        <h3>Personal Information</h3>
+        <div class="input-box">
+          <label>Full Name</label>
+          <input type="text" required />
+        </div>
+        <div class="input-box">
+          <label>Date Of Birth</label>
+          <input type="date" required />
+        </div>
+        <div class="column">
+          <div class="input-box">
+            <label>Address</label>
+            <input type="text" required />
+          </div>
+          <div class="input-box">
+            <label>City</label>
+            <input type="text" required />
+          </div>
+          <div class="input-box">
+            <label for="state">State</label>
+            <input type="text" required />
+          </div>
+          <div class="input-box">
+            <label>Zip-Code</label>
+            <input type="text" required />
+          </div>
+          <div class="input-box">
+            <label>Phone Numbert</label>
+            <input type="tel" required />
+          </div>
+          <div class="input-box">
+            <label>Email Address</label>
+            <input type="email" required />
+          </div>
+          <h3>Emergency Contact</h3>
+          <div class="input-box">
+            <label for="emergencyname">Name</label>
+            <input type="text" name="emergencyname" id="emergencyname" />
+          </div>
+          <div class="input-box">
+            <label for="emergencyname">Relationship</label>
+            <input type="text" name="emergencyname" id="emergencyname" />
+          </div>
+          <div class="input-box">
+            <label for="emergencyname">Phone Number</label>
+            <input type="tel" name="emergencyPhonenumber" id="emergencyname" />
+          </div>
+          
+          <h2>Membership Details</h2>
+          <div class="input-box">
+          <label for="membershipType">Type of Membership</label>
+          <select id="membershipType" required>
+            <option value="">Select One</option>
+            <option value="standard">Standard</option>
+            <option value="vip">VIP</option>
+            <option value="Pit access">Pit Access</option>
+            <option value="familyValue">Family Value</option>
+        </div>
+          </select>
+          <div class="input-box">
+            <label for="preferredEvent">Preferred Event(s):</label>
+            <input type="text" id="preferredEvent" required>
+        </div>
+
+        <div class="input-box">
+            <label for="tshirt">T-shirt Size:</label>
+            <select id="tshirt" required>
+               <option value="">Select one</option>
+               <option value="s">S</option>
+               <option value="m">M</option>
+               <option value="l">L</option>
+               <option value="xl">XL</option>
+               <option value="xxl">XXL</option>
+            </select>
+        </div>
+        <h2>Additional Info</h2>
+        <div class="input-box">
+            <label for="hear">How Did You Hear About Us</label>
+        <input type="text" id="hear" required>
+        </div>
+        <div class="input-box">
+            <label for="condition">Any Medical Conditions or special accomodations needed?</label>
+        <textarea id="condition" name="condition"></textarea>
+        </div>
+        <h2>
+           Agreement 
+        </h2>
+        <div class="checkbox-group"></div>
+        <label for="term">I agree to follow all rules, safety guidelines, regulation, and terms outline by Mike Chandler</label>
+    </div>
+    <br><br>
+    <input type="submit" value="Submit Membership Form">
+      </form>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+
+/* Responsive Styling for Phones and Tablets */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 20px; /* Smaller font for smaller screens */
+  }
+
+  .container h2 {
+    font-size: 18px; /* Adjust section headers */
+  }
+
+  .input-box input, 
+  .input-box select, 
+  textarea {
+    padding: 8px; /* Adjust input box padding */
+    font-size: 14px; /* Smaller text for inputs */
+  }
+
+  form button {
+    font-size: 14px; /* Adjust button text size */
+    padding: 8px; /* Adjust button padding */
+  }
+
+  input[type="submit"] {
+    font-size: 14px; /* Adjust submit button text size */
+    padding: 8px; /* Adjust button padding */
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 18px; /* Further reduce font size for smaller devices */
+  }
+
+  .container h2 {
+    font-size: 16px;
+  }
+
+  form button,
+  input[type="submit"] {
+    font-size: 12px; /* Small button text for phones */
+    padding: 6px;
+  }
+}

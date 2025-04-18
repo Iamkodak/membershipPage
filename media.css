@@ -1,0 +1,111 @@
+/* 
+for mobile phone: < 640px
+for tablets: 640px --- 768px (small tablets)
+             768px --- 1024px (big tablets)
+for laptops: 1024px --- 1280px 
+for desktops and large screens: 1280px ~~~~ infinity             
+*/
+
+/* Responsive Styling for Smaller Screens */
+@media screen and (max-width: 768px) {
+    #header-div {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 10px 0;
+    }
+  
+    nav > ul {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .hero {
+      flex-direction: column;
+      gap: 20px;
+      padding: 80px 20px;
+    }
+  
+    #img-container {
+      width: 100%;
+      height: auto;
+      padding: 20px;
+    }
+  
+    .container {
+      width: 90%;
+      margin: 10px auto;
+      padding: 15px;
+    }
+  
+    .benefit-grid {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .benefit-card {
+      width: 100%;
+    }
+  
+    .testmonials-grid {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+    }
+  
+    .card {
+      padding: 1.5rem;
+    }
+  
+    .section-container {
+      padding: 1rem 0;
+    }
+  
+    .header h1 {
+      font-size: 1.5rem;
+    }
+  
+    .footer button {
+      padding: 0.8rem 1.5rem;
+      font-size: 0.7rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    h1 {
+      font-size: 24px;
+    }
+  
+    h2 {
+      font-size: 18px;
+    }
+  
+    h3 {
+      font-size: 16px;
+    }
+  
+    p {
+      font-size: 14px;
+    }
+  
+    nav > ul {
+      gap: 10px;
+    }
+  
+    .hero-content {
+      width: 100%;
+    }
+  
+    #img-container {
+      padding: 10px;
+    }
+  
+    .container {
+      padding: 10px;
+      border: none;
+    }
+  
+    .card p {
+      font-size: 0.9rem;
+    }
+  }
+  
