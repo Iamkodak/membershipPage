@@ -3,9 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Learn More</title>
+    <style>
+        /* Base Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #1a2c50;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2, h3 {
+            color: #1a2c50;
+        }
+
+        p {
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        .benefits-list, .testimonials {
+            margin: 20px 0;
+        }
+
+        .benefits-list ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .benefits-list li {
+            margin: 10px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .benefits-list li::before {
+            content: "✔";
+            position: absolute;
+            left: 0;
+            color: #1a2c50;
+            font-weight: bold;
+        }
+
+        .testimonials blockquote {
+            margin: 15px 0;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-left: 5px solid #1a2c50;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #1a2c50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .button:hover {
+            background-color: #333;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px 20px;
+            background-color: #1a2c50;
+            color: white;
+        }
+
+        /* Responsive Styling */
+        @media (max-width: 768px) {
+            main {
+                padding: 15px;
+            }
+
+            header h1 {
+                font-size: 24px;
+            }
+
+            h2, h3 {
+                font-size: 18px;
+            }
+
+            .button {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 20px;
+            }
+
+            h2, h3 {
+                font-size: 16px;
+            }
+
+            .button {
+                font-size: 12px;
+                padding: 6px 12px;
+            }
+        }
+    </style>
 </head>
 <body>
-    
+    <header>
+        <h1>Welcome to Mike Chandler Membership Community</h1>
+    </header>
+    <main>
+        <h2>Discover the Thrill of Our Community</h2>
+        <p>Our Mike Chandler fan membership program is more than just a group—it's a lifestyle. Designed for enthusiasts who love speed, precision, and the stories of the racing legends, this is your chance to connect like never before.</p>
+
+        <h3>Membership Benefits</h3>
+        <div class="benefits-list">
+            <ul>
+                <li>Exclusive access to live-streamed racing events and behind-the-scenes coverage.</li>
+                <li>Early bird tickets to fan meet-ups and international racing festivals.</li>
+                <li>Limited edition merchandise only available to members.</li>
+                <li>Access to private forums and discussions with racing legends.</li>
+                <li>Monthly newsletters with insider stories and interviews.</li>
+            </ul>
+        </div>
+
+        <h3>What Our Members Are Saying</h3>
+        <div class="testimonials">
+            <blockquote>
+                "Joining this community reignited my love for racing! The perks are amazing, and the people are even better!" - Jamie R.
+            </blockquote>
+            <blockquote>
+                "Being a part of this group feels like being part of a family that truly understands the passion behind every race." - Chris K.
+            </blockquote>
+        </div>
+
+        <h3>Join Us Today!</h3>
+        <p>Don't miss out on the opportunity to be part of a community that shares your love for racing. Whether you're here for the perks or the people, there's a place for you.</p>
+        <a href="/form.html" class="button">Sign Up Now</a>
+    </main>
+    <footer>
+        <p>&copy; 2025 Mike Chandler Fan Membership. All rights reserved.</p>
+    </footer>
 </body>
 </html>
