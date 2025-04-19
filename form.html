@@ -13,7 +13,7 @@
       </header>  
     <section class="container">
       <h2>Membership Form</h2>
-      <form action="https://formspree.io/f/xldjykkr" class="form" method="post">
+      <form id="membership-form" class="form" method="post">
         <h3>Personal Information</h3>
         <div class="input-box">
           <label for="fullname">Full Name</label>
@@ -46,7 +46,7 @@
           </div>
           <div class="input-box">
             <label>Email Address</label>
-            <input type="email" required />
+            <input type="email" id="email" required />
           </div>
           <h3>Emergency Contact</h3>
           <div class="input-box">
@@ -75,7 +75,7 @@
           </select>
           <div class="input-box">
             <label for="preferredEvent">Preferred Event(s):</label>
-            <input type="text" id="preferredEvent" required>
+            <input type="text" id="preferredEvent" >
         </div>
 
         <div class="input-box">
@@ -92,7 +92,7 @@
         <h2>Additional Info</h2>
         <div class="input-box">
             <label for="hear">How Did You Hear About Us</label>
-        <input type="text" id="hear" required>
+        <input type="text" id="hear" >
         </div>
         <div class="input-box">
             <label for="condition">Any Medical Conditions or special accomodations needed?</label>
@@ -108,5 +108,14 @@
     <input type="submit" value="Submit Membership Form">
       </form>
     </section>
+
+    <div class="popup" id="thank-you-popup">
+      <h3>Thank you for applying for the membership plan!</h3>
+      <p>You will receive an email response within 24 hours.</p>
+      <button onclick="location.href='page1.html'">Go to Page 1</button>
+      <button onclick="location.href='page2.html'">Go to Page 2</button>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
