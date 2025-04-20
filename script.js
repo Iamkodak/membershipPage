@@ -22,11 +22,11 @@ document.getElementById('membership-form').addEventListener('submit', async func
   };
 
   try {
-      const response = await fetch('https://backend-atc0.onrender.com', { // Replace with your backend URL
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(formData), // Send all form data to the backend
-      });
+    const response = await fetch('https://backend-atc0.onrender.com/submit-form', { 
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(formData),
+  });
 
       if (response.ok) {
           showThankYouPopup(); // Show pop-up confirmation screen
