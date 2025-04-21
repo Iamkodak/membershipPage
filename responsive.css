@@ -1,4 +1,78 @@
 
+
+
+/* Default desktop styling */
+#header-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+#logo img {
+  width: 150px; /* Default logo size */
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #000;
+}
+
+/* Mobile and Tablet View */
+@media (max-width: 768px) {
+  #header-div {
+      flex-direction: row;
+      justify-content: space-between; /* Align logo to left and links to right */
+  }
+
+  #logo img {
+      width: 100px; /* Reduce logo size */
+  }
+
+  nav ul {
+      flex-direction: row; /* Ensure links are displayed in a row */
+  }
+
+  nav ul li {
+      margin-left: 10px; /* Adjust spacing between links */
+  }
+
+  nav ul a {
+      font-size: 14px; /* Reduce link font size */
+  }
+}
+
+@media (max-width: 480px) {
+  #header-div {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  #logo img {
+      width: 80px; /* Further reduce logo size for smaller screens */
+  }
+
+  nav ul a {
+      font-size: 12px; /* Reduce link font size for smaller screens */
+  }
+
+  nav ul li {
+      margin-left: 8px; /* Adjust spacing for smaller screens */
+  }
+}
 /* Responsive Styling for Phones and Tablets */
 @media (max-width: 768px) {
   body {
