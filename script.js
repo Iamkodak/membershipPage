@@ -22,7 +22,7 @@ document.getElementById('membership-form').addEventListener('submit', async func
   };
 
   try {
-      const response = await fetch('https://your-backend-service.onrender.com/submit-form', {
+      const response = await fetch('https://backend-1-tsgk.onrender.com/submit-form', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(formData),
